@@ -19,6 +19,14 @@ $color-grey-dark-3: #333;
 $color-white: #fff;
 $color-black: #000;
 
+// SHADOWS
+$shadow-1: 0 1.5rem 4rem rgba($color-black, 0.10);
+$shadow-2: 0 3rem 6rem rgba($color-black, 0.1);
+
+// CLIP PATH
+$clip-path-polygon: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+$clip-path-circle: circle(50% at 50% 50%);
+
 
 // FONT
 $default-font-size: 1.6rem;
