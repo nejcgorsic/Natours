@@ -21,9 +21,6 @@ html {
         font-size: 50%;
     }
 
-    @include respond(big-desktop) {
-        font-size: 75%; // 1 rem = 12, 12/16
-    }
 }
 
 body {
