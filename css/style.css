@@ -128,8 +128,8 @@ body {
     .heading-secondary {
       font-size: 2.5rem; } }
   .heading-secondary:hover {
-    transform: skewY(2deg) skewX(15deg) scale(1.1);
-    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+    opacity: 0.9;
+    border-bottom: 1px solid #3a7bd5; }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -776,6 +776,7 @@ body {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
   .header__logo-box {
+    transform: scale(2);
     position: absolute;
     top: 4rem;
     left: 4rem; }
