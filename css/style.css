@@ -684,6 +684,47 @@ body {
   -moz-box-shadow: 0px 0px 68px -50px rgba(0, 0, 0, 0.31);
   box-shadow: 0px 0px 68px -50px rgba(0, 0, 0, 0.31); }
 
+.tour__title-wrapper {
+  margin-top: 2rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .tour__title-wrapper--main {
+    font-size: 4.2rem;
+    font-weight: 300; }
+  .tour__title-wrapper--price {
+    margin-left: 3rem;
+    display: flex; }
+
+.tour__title-stars {
+  margin-top: -2rem;
+  padding-left: 2rem; }
+
+.tour__info {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  font-size: 1.3rem; }
+
+.tour__item {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  display: flex; }
+
+.tour__includes {
+  padding-top: 2rem;
+  padding-left: 2rem; }
+  .tour__includes > ul {
+    list-style: none; }
+
+.clearfix {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0; }
+  .clearfix__title {
+    font-size: 1.3rem; }
+
 .footer {
   background-color: #333;
   padding: 10rem 0;

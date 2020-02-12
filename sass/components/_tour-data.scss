@@ -7,3 +7,62 @@
     box-shadow: 0px 0px 68px -50px rgba(0, 0, 0, 0.31);
 
 }
+
+.tour__title {
+    &-wrapper {
+        margin-top: 2rem;
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &--main {
+            font-size: 4.2rem;
+            font-weight: 300;
+        }
+
+        &--price {
+            margin-left: 3rem;
+            display: flex;
+        }
+    }
+
+    &-stars {
+        margin-top: -2rem;
+        padding-left: 2rem;
+    }
+
+}
+
+.tour__info {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    font-size: 1.3rem;
+}
+
+.tour__item {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    display: flex;
+}
+
+.tour__includes {
+    padding-top: 2rem;
+    padding-left: 2rem;
+
+    &>ul {
+        list-style: none;
+    }
+}
+
+.clearfix {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+
+    &__title {
+        font-size: 1.3rem;
+    }
+
+}
