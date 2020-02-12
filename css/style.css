@@ -63,11 +63,7 @@ html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box;
-  padding: 3rem; }
-  @media only screen and (max-width: 56.25em) {
-    body {
-      padding: 0; } }
+  box-sizing: border-box; }
 
 ::selection {
   background-color: #3a7bd5;
@@ -92,11 +88,7 @@ body {
     letter-spacing: 3.5rem;
     animation-name: moveInLeft;
     animation-duration: 1s;
-    animation-timing-function: ease-out;
-    /*
-        animation-delay: 3s;
-        animation-iteration-count: 3;
-        */ }
+    animation-timing-function: ease-out; }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--main {
         letter-spacing: 1rem;
@@ -178,20 +170,6 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
-.bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  opacity: .15;
-  overflow: hidden; }
-  .bg-video__content {
-    height: 100%;
-    width: 100%;
-    object-fit: cover; }
-
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -227,22 +205,6 @@ body {
   color: #fff; }
   .btn--green::after {
     background-color: #3a7bd5; }
-
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 10rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all .4s; }
-
-.btn--animated {
-  animation: moveInBottom .5s ease-out .75s;
-  animation-fill-mode: backwards; }
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
@@ -715,6 +677,13 @@ body {
       transition: all .5s;
       backface-visibility: hidden; }
 
+.tour__container {
+  background-color: #fff;
+  height: 100rem;
+  -webkit-box-shadow: 0px 0px 68px -50px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 0px 0px 68px -50px rgba(0, 0, 0, 0.31);
+  box-shadow: 0px 0px 68px -50px rgba(0, 0, 0, 0.31); }
+
 .footer {
   background-color: #333;
   padding: 10rem 0;
@@ -812,17 +781,7 @@ body {
   background-image: linear-gradient(to right bottom, rgba(94, 149, 241, 0.8), rgba(15, 98, 185, 0.8)), url(../img/hero-small.jpg);
   background-size: cover;
   background-position: top;
-  position: relative;
-  height: 85vh;
-  background-image: linear-gradient(to right bottom, rgba(94, 149, 241, 0.8), rgba(15, 98, 185, 0.8)), url(../img/hero-small.jpg);
-  background-size: cover;
-  background-position: top;
   position: relative; }
-  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-    .header {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-      height: 95vh; } }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
       background-image: linear-gradient(to right bottom, rgba(94, 149, 241, 0.8), rgba(15, 98, 185, 0.8)), url(../img/hero.jpg); } }
@@ -843,11 +802,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
-  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-    .header {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-      height: 95vh; } }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
       background-image: linear-gradient(to right bottom, rgba(94, 149, 241, 0.8), rgba(15, 98, 185, 0.8)), url(../img/hero.jpg); } }
@@ -855,19 +809,6 @@ body {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
-  .header__logo-box {
-    transform: scale(2);
-    position: absolute;
-    top: 4rem;
-    left: 4rem; }
-  .header__logo {
-    height: 3.5rem; }
-  .header__text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
   .header-pages {
     height: 40vh;
     background-image: linear-gradient(to right bottom, rgba(94, 149, 241, 0.8), rgba(15, 98, 185, 0.8)), url(../img/hero2-small.jpg);
@@ -889,6 +830,32 @@ body {
     .header-pages__logo {
       height: 3.5rem; }
     .header-pages__text-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center; }
+  .header-pages-1 {
+    height: 40vh;
+    background-image: linear-gradient(to right bottom, rgba(94, 149, 241, 0.8), rgba(15, 98, 185, 0.8)), url(../img/nat-5.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative; }
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+      .header-pages-1 {
+        background-image: linear-gradient(to right bottom, rgba(94, 149, 241, 0.8), rgba(15, 98, 185, 0.8)), url(../img/nat-5.jpg); } }
+    @media only screen and (max-width: 37.5em) {
+      .header-pages-1 {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
+    .header-pages-1__logo-box {
+      transform: scale(2);
+      position: absolute;
+      top: 4rem;
+      left: 4rem; }
+    .header-pages-1__logo {
+      height: 3.5rem; }
+    .header-pages-1__text-box {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -1034,10 +1001,7 @@ body {
   padding: 20rem 0;
   background-image: linear-gradient(to right bottom, rgba(94, 149, 241, 0.8), rgba(15, 98, 185, 0.8)), url(../img/nat-4.jpg);
   background-size: cover;
-  transform: skewY(-7deg);
   margin-top: -10rem; }
-  .section-features > * {
-    transform: skewY(7deg); }
   @media only screen and (max-width: 56.25em) {
     .section-features {
       padding: 10rem 0; } }
@@ -1085,3 +1049,11 @@ body {
     @media only screen and (max-width: 56.25em) {
       .book__form {
         width: 100%; } }
+
+.section-tour {
+  background-color: #f7f7f7;
+  height: 150rem;
+  padding: 2rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .section-tour {
+      padding: 20rem 0; } }

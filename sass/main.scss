@@ -7,7 +7,6 @@
 @import "base/typography";
 @import "base/utilities";
 
-@import "components/bg-video";
 @import "components/button";
 @import "components/card";
 @import "components/composition";
@@ -15,6 +14,7 @@
 @import "components/form";
 @import "components/popup";
 @import "components/story";
+@import "components/tour-data";
 
 @import "layout/footer";
 @import "layout/grid";
@@ -22,4 +22,4 @@
 @import "layout/navigation";
 
 @import "pages/home";
-
+@import "pages/tour";

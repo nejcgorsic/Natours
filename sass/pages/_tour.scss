@@ -1,0 +1,9 @@
+.section-tour {
+    background-color: $color-grey-light-1;
+    height: 150rem;
+    padding: 2rem 0;
+
+    @include respond(tab-port) {
+        padding: 20rem 0;
+    }
+}
