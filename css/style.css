@@ -710,6 +710,11 @@ body {
   padding-top: 2rem;
   padding-left: 2rem;
   display: flex; }
+  .tour__item--1, .tour__item--2, .tour__item--3 {
+    margin-right: 2rem;
+    height: 50px;
+    width: 125px;
+    background-color: #D3959B; }
 
 .tour__includes {
   padding-top: 2rem;

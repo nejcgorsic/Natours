@@ -44,6 +44,19 @@
     padding-top: 2rem;
     padding-left: 2rem;
     display: flex;
+
+
+    &--1,
+    &--2,
+    &--3 {
+        margin-right: 2rem;
+        height: 50px;
+        width: 125px;
+        background-color: $color-secondary-light;
+    }
+
+
+
 }
 
 .tour__includes {
